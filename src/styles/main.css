@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 95%;
+  }
+}
