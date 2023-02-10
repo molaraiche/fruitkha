@@ -4,10 +4,12 @@ import "./styles/app.css";
 const App = () => {
   return (
     <div className="box">
-      <div className="container ">
-        <header>
+      <div className="hContainer">
+        <header className="container">
           <Header />
         </header>
+      </div>
+      <div className="container ">
         <section>
           <RouteLink />
         </section>

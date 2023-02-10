@@ -5,6 +5,7 @@
   height: 15vh;
   font-family: "Open Sans", sans-serif;
 }
+
 .header a img {
   max-width: 200px;
   width: 100%;
@@ -74,50 +75,10 @@
 
   #hide {
     visibility: hidden;
-    animation: moveOn;
-    animation-duration: 0.5s;
+    opacity: 0;
   }
   #show {
     visibility: visible;
-    animation: moveOut;
-    animation-duration: 0.5s;
-  }
-}
-@keyframes moveOn {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes moveOut {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0.3;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  75% {
-    opacity: 0.7;
-  }
-
-  100% {
     opacity: 1;
   }
 }

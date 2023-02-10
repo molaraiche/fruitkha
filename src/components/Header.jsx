@@ -2,12 +2,18 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import "../styles/header.css";
-import { CgMenuGridR } from "react-icons/cg";
+import { CgMenuGridR, CgClose } from "react-icons/cg";
 const Header = () => {
+  const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
   console.log(Menu);
   const menuHandler = () => {
     setMenu(Menu === "hide" ? "show" : "hide");
+    setSquare(false);
+  };
+  const squareHandler = () => {
+    setSquare(true);
+    setMenu("hide");
   };
   console.log(Menu);
   return (
@@ -41,7 +47,11 @@ const Header = () => {
         </span>
       </div>
       <div className="burger">
-        <CgMenuGridR onClick={menuHandler} />
+        {square === true ? (
+          <CgMenuGridR onClick={menuHandler} />
+        ) : (
+          <CgClose onClick={squareHandler} />
+        )}
       </div>
     </div>
   );
