@@ -4,16 +4,18 @@ import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import "../styles/header.css";
 import { CgMenuGridR } from "react-icons/cg";
 const Header = () => {
-  const { menu, setMenu } = useState("hide");
+  const [Menu, setMenu] = useState("hide");
+  console.log(Menu);
   const menuHandler = () => {
-    setMenu("show");
+    setMenu(Menu === "hide" ? "show" : "hide");
   };
+  console.log(Menu);
   return (
     <div className="header">
       <Link to="/">
         <img src="./images/logo.png" alt="logo" />
       </Link>
-      <ul id={menu}>
+      <ul id={Menu}>
         <li>
           <Link to="/"> Home </Link>
         </li>
