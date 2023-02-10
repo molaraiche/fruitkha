@@ -1,0 +1,18 @@
+#root {
+  background: url("../../public/Images/hero-bg.jpg") fixed center center/cover;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+.box {
+  position: absolute;
+  background-color: #0519228a;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -1,12 +1,19 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import "../styles/header.css";
+import { CgMenuGridR } from "react-icons/cg";
 const Header = () => {
+  const { menu, setMenu } = useState("hide");
+  const menuHandler = () => {
+    setMenu("show");
+  };
   return (
-    <div>
+    <div className="header">
       <Link to="/">
-        <h1> Logo</h1>{" "}
+        <img src="./images/logo.png" alt="logo" />
       </Link>
-      <ul>
+      <ul id={menu}>
         <li>
           <Link to="/"> Home </Link>
         </li>
@@ -23,6 +30,17 @@ const Header = () => {
           <Link to="shop">Shop</Link>
         </li>
       </ul>
+      <div className="icons">
+        <span>
+          <FaSearch />
+        </span>
+        <span>
+          <FaShoppingCart />
+        </span>
+      </div>
+      <div className="burger">
+        <CgMenuGridR onClick={menuHandler} />
+      </div>
     </div>
   );
 };
