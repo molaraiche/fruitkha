@@ -1,7 +1,19 @@
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import RouteLink from "./routes";
 import "./styles/app.css";
 const App = () => {
+  const [datas, setData] = useState([]);
+  console.log(datas);
+  const getData = async () => {
+    const res = await fetch("./db/db.json");
+    const data = await res.json();
+    setData(data);
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+  console.log(datas);
   return (
     <div className="box">
       <div className="hContainer">
@@ -10,7 +22,7 @@ const App = () => {
         </header>
       </div>
       <section>
-        <RouteLink />
+        <RouteLink datas={datas} />
       </section>
     </div>
   );
