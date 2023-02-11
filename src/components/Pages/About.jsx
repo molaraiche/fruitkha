@@ -1,7 +1,115 @@
-import React from "react";
-
+import "../../styles/about.css";
+import { TbTruckDelivery } from "react-icons/tb";
+import { GiPriceTag } from "react-icons/gi";
+import { FaBoxOpen } from "react-icons/fa";
+import { TfiReload } from "react-icons/tfi";
 const About = () => {
-  return <div>About</div>;
+  return (
+    <section>
+      <section className="about">
+        <section className="aboutTitle">
+          <p>WE SALE FRESH FRUITS</p>
+          <h2> About Us </h2>
+        </section>
+        <section className="aContent">
+          <section className="details">
+            <h1>
+              Why <span className="fr">Fruitkha</span>
+            </h1>
+            <section className="atextes">
+              <section>
+                <article>
+                  <section className="aicon">
+                    <TbTruckDelivery />
+                  </section>
+                  <section className="atxt">
+                    <h3>Home Delivery</h3>
+                    <p>
+                      sit voluptatem accusantium dolore mque laudantium, totam
+                      rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                  </section>
+                </article>
+                <article>
+                  <section className="aicon">
+                    <GiPriceTag />
+                  </section>
+                  <section className="atxt">
+                    <h3>Best Price</h3>
+                    <p>
+                      sit voluptatem accusantium dolore mque laudantium, totam
+                      rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                  </section>
+                </article>
+              </section>
+              <section>
+                <article>
+                  <section className="aicon">
+                    <FaBoxOpen />
+                  </section>
+                  <section className="atxt">
+                    <h3>Custom Box</h3>
+                    <p>
+                      sit voluptatem accusantium dolore mque laudantium, totam
+                      rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                  </section>
+                </article>
+                <article>
+                  <section className="aicon">
+                    <TfiReload />
+                  </section>
+                  <section className="atxt">
+                    <h3>Quick Refund</h3>
+                    <p>
+                      sit voluptatem accusantium dolore mque laudantium, totam
+                      rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                  </section>
+                </article>
+              </section>
+            </section>
+          </section>
+          <section className="pic">
+            <img src="./images/abt.jpg" alt="about img" />
+          </section>
+        </section>
+      </section>
+      <section className="teamSection">
+        <section className="teamHea">
+          <h1>
+            Our <span className="fr">Team</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+            fuga quas itaque eveniet beatae optio.
+          </p>
+        </section>
+        <section className="team">
+          <div className="member team-one">
+            <img src="./images/team/team-1.jpg" alt="jimmy Doe" />
+            <div className="social"></div>
+            <p className="name">Jimmy Doe</p>
+            <p className="job"> Farmer</p>
+          </div>
+          <div className="member team-two">
+            <img src="./images/team/team-2.jpg" alt="Marry Doe" />
+            <div className="social"></div>
+            <p className="name">Marry Doe</p>
+            <p className="job"> Farmer</p>
+          </div>
+          <div className="member team-three">
+            <img src="./images/team/team-3.jpg" alt="Simon Joe" />
+            <div className="social"></div>
+            <p className="name">Simon Joe</p>
+            <p className="job"> Farmer</p>
+          </div>
+        </section>
+        <div className="testimonials"></div>
+      </section>
+    </section>
+  );
 };
 
 export default About;

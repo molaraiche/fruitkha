@@ -9,11 +9,9 @@ const App = () => {
           <Header />
         </header>
       </div>
-      <div className="container ">
-        <section>
-          <RouteLink />
-        </section>
-      </div>
+      <section>
+        <RouteLink />
+      </section>
     </div>
   );
 };
