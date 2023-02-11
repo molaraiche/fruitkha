@@ -6,44 +6,61 @@ import { CgMenuGridR, CgClose } from "react-icons/cg";
 const Header = () => {
   const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
-  console.log(Menu);
+  const [icons, setIcons] = useState("hideIcons");
   const menuHandler = () => {
     setMenu(Menu === "hide" ? "show" : "hide");
+    setIcons("showIcons");
     setSquare(false);
   };
   const squareHandler = () => {
     setSquare(true);
+    setIcons("hideIcons");
     setMenu("hide");
   };
-  console.log(Menu);
+  const closeMenu = () => {
+    setMenu("hide");
+    setSquare(true);
+  };
   return (
     <div className="header">
-      <Link to="/">
+      <Link to="/" onClick={closeMenu}>
         <img src="./images/logo.png" alt="logo" />
       </Link>
       <ul id={Menu}>
         <li>
-          <Link to="/"> Home </Link>
+          <Link to="/" onClick={closeMenu}>
+            {" "}
+            Home{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" onClick={closeMenu}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/news"> News </Link>
+          <Link to="/news" onClick={closeMenu}>
+            {" "}
+            News{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={closeMenu}>
+            Contact
+          </Link>
         </li>
         <li>
-          <Link to="shop">Shop</Link>
+          <Link to="shop" onClick={closeMenu}>
+            Shop
+          </Link>
         </li>
       </ul>
-      <div className="icons">
+      <div className="icons" id={icons}>
         <span>
-          <FaSearch />
+          <FaSearch onClick={closeMenu} />
         </span>
         <span>
-          <FaShoppingCart />
+          <FaShoppingCart onClick={closeMenu} />
         </span>
       </div>
       <div className="burger">
