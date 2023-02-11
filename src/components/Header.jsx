@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/" onClick={closeMenu}>
-        <img src="./images/logo.png" alt="logo" />
+        <img src="public/images/logo.png" alt="logo" />
       </Link>
       <ul id={Menu}>
         <li>
