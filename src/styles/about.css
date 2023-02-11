@@ -108,10 +108,13 @@
   font-size: 30px;
   font-family: "Poppins", sans-serif;
 }
-.teamHea P {
+.teamHea p {
   font-family: "Open Sans", sans-serif;
   color: #05192297;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 .teamSection {
   display: flex;
@@ -125,6 +128,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-bottom: 20px;
 }
 .team .member img {
   max-width: 300px;
