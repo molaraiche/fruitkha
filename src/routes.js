@@ -20,7 +20,16 @@ const RouteLink = ({ datas }) => {
         <Route
           key={data.id}
           path={data.link}
-          element={<Article id={data.id} />}
+          element={
+            <Article
+              id={data.id}
+              img={data.img}
+              admin={data.admin}
+              title={data.title}
+              date={data.date}
+              content={data.content}
+            />
+          }
         />
       ))}
     </Routes>
