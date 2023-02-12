@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsFillPersonFill, BsFillCalendarCheckFill } from "react-icons/bs";
 import { RiArrowRightSFill } from "react-icons/ri";
 const Card = ({ img, title, admin, date, content, link }) => {
@@ -16,9 +17,9 @@ const Card = ({ img, title, admin, date, content, link }) => {
         {date}
       </p>
       <p> {content} </p>
-      <a href={link}>
+      <Link to={link}>
         Read more <RiArrowRightSFill />
-      </a>
+      </Link>
     </div>
   );
 };

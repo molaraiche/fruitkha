@@ -23,12 +23,12 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <Link to="/" onClick={closeMenu}>
+      <Link to="*" onClick={closeMenu}>
         <img src="./Images/logo.png" alt="logo" />
       </Link>
       <ul id={Menu}>
         <li>
-          <Link to="/" onClick={closeMenu}>
+          <Link to="*" onClick={closeMenu}>
             {" "}
             Home{" "}
           </Link>

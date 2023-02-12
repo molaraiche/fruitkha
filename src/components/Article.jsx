@@ -1,7 +1,7 @@
 import React from "react";
 
-const Article = () => {
-  return <div>Article</div>;
+const Article = ({ id }) => {
+  return <div>{id}</div>;
 };
 
 export default Article;

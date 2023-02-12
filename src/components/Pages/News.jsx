@@ -1,7 +1,6 @@
-// import { Link } from "react-router-dom";
-/* <Link to="/single-new">Read More</Link> */
 import Card from "../Card";
 import "../../styles/news.css";
+
 const News = ({ datas }) => {
   return (
     <section>
