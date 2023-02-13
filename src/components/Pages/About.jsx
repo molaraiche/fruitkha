@@ -88,25 +88,24 @@ const About = () => {
         </section>
         <section className="team">
           <div className="member team-one">
-            <img src="./images/team/team-1.jpg" alt="jimmy Doe" />
+            <img src="./images/team/team-1.jpg" alt="jimmy_Doe" />
             <div className="social"></div>
             <p className="name">Jimmy Doe</p>
             <p className="job"> Farmer</p>
           </div>
           <div className="member team-two">
-            <img src="./images/team/team-2.jpg" alt="Marry Doe" />
+            <img src="./images/team/team-2.jpg" alt="Marry_Doe" />
             <div className="social"></div>
             <p className="name">Marry Doe</p>
             <p className="job"> Farmer</p>
           </div>
           <div className="member team-three">
-            <img src="./images/team/team-3.jpg" alt="Simon Joe" />
+            <img src="./images/team/team-3.jpg" alt="Simon_Joe" />
             <div className="social"></div>
             <p className="name">Simon Joe</p>
             <p className="job"> Farmer</p>
           </div>
         </section>
-        <div className="testimonials"></div>
       </section>
     </section>
   );
