@@ -1,0 +1,136 @@
+.contactContent {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.chead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+}
+.chead p {
+  font-family: "Open Sans", sans-serif;
+  color: #f28123;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.chead h1 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 64px;
+}
+.formtxt h2 {
+  font-family: "Poppins", sans-serif;
+}
+.formtxt p {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px;
+}
+.form,
+.address {
+  width: 50%;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1%;
+  margin: 10px;
+}
+.form .form-grp input,
+.form .form-grp textarea {
+  padding: 8px;
+  width: 100%;
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 450;
+  border: 2px solid #051922;
+  outline: none;
+  border-radius: 5px;
+}
+.form .form-grp input:focus,
+.form .form-grp textarea:focus {
+  border: 2px solid #f28123;
+}
+.form .nameEmail,
+.form .phoneSubject {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form .message,
+.form .submitHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form div textarea {
+  resize: vertical;
+}
+
+.form .submitHolder input {
+  background-color: #f28123;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.form .submitHolder input:hover {
+  opacity: 0.9;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+}
+.address div span svg {
+  font-size: 24px;
+  color: #f28123;
+}
+.address div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.address .cIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}
+.address p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #0519226d;
+  font-weight: 450;
+}
+
+@media (max-width: 541px) {
+  .contactContent {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .formtxt h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form,
+  .address {
+    width: 90%;
+  }
+}
