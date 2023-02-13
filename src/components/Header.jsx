@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 import "../styles/header.css";
 import { CgMenuGridR, CgClose } from "react-icons/cg";
 const Header = () => {
@@ -29,8 +29,7 @@ const Header = () => {
       <ul id={Menu}>
         <li>
           <Link to="*" onClick={closeMenu}>
-            {" "}
-            Home{" "}
+            Home
           </Link>
         </li>
         <li>
@@ -40,8 +39,7 @@ const Header = () => {
         </li>
         <li>
           <Link to="/news" onClick={closeMenu}>
-            {" "}
-            News{" "}
+            News
           </Link>
         </li>
         <li>
@@ -56,9 +54,6 @@ const Header = () => {
         </li>
       </ul>
       <div className="icons" id={icons}>
-        <span>
-          <FaSearch onClick={closeMenu} />
-        </span>
         <span>
           <FaShoppingCart onClick={closeMenu} />
         </span>
