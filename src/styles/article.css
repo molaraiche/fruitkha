@@ -48,6 +48,7 @@
 .content {
   padding: 5%;
   text-align: justify;
+  font-family: "Open Sans", sans-serif;
 }
 .backBtn {
   position: absolute;

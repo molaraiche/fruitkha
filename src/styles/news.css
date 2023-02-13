@@ -52,6 +52,9 @@
 .cardIcons span {
   margin: 0 5px;
 }
+.card p {
+  font-family: "Open Sans", sans-serif;
+}
 .card p,
 .card h4,
 .card a {
