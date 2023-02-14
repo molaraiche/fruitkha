@@ -11,6 +11,16 @@
 a {
   text-decoration: none;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  color: red;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 @media (min-width: 200px) {
   .container {

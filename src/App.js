@@ -4,14 +4,21 @@ import RouteLink from "./routes";
 import "./styles/app.css";
 const App = () => {
   const [datas, setData] = useState([]);
+  const [products, setProducrs] = useState([]);
   console.log(datas);
   const getData = async () => {
     const res = await fetch("./db/db.json");
     const data = await res.json();
     setData(data);
   };
+  const getProducts = async () => {
+    const res = await fetch("./db/products.json");
+    const data = await res.json();
+    setProducrs(data);
+  };
   useEffect(() => {
     getData();
+    getProducts();
   }, []);
   console.log(datas);
   return (
@@ -22,7 +29,7 @@ const App = () => {
         </header>
       </div>
       <section>
-        <RouteLink datas={datas} />
+        <RouteLink datas={datas} products={products} />
       </section>
     </div>
   );

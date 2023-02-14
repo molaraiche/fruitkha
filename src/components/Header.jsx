@@ -1,20 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
 import "../styles/header.css";
 import { CgMenuGridR, CgClose } from "react-icons/cg";
 const Header = () => {
   const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
-  const [icons, setIcons] = useState("hideIcons");
   const menuHandler = () => {
     setMenu(Menu === "hide" ? "show" : "hide");
-    setIcons("showIcons");
     setSquare(false);
   };
   const squareHandler = () => {
     setSquare(true);
-    setIcons("hideIcons");
     setMenu("hide");
   };
   const closeMenu = () => {
@@ -53,11 +49,7 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <div className="icons" id={icons}>
-        <span>
-          <FaShoppingCart onClick={closeMenu} />
-        </span>
-      </div>
+
       <div className="burger">
         {square === true ? (
           <CgMenuGridR onClick={menuHandler} />

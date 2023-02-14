@@ -1,0 +1,82 @@
+.prdHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+}
+.prdHead p {
+  color: #f28123;
+  width: 600;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+}
+.prdHead h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+}
+.productsContent {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.productsContent .imageHolder {
+  width: 50%;
+}
+.productsContent .imageHolder img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.productsContent .prdTxt {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+}
+.prdTxt h1 {
+  font-family: "Poppins", sans-serif;
+}
+.prdTxt p {
+  font-family: "Open Sans", sans-serif;
+}
+.prdTxt input {
+  width: 80px;
+  height: 50px;
+  margin: 20px;
+  text-align: center;
+  outline: none;
+  border: 2px solid #000;
+}
+.prdTxt input:focus {
+  border: 2px solid #f28123;
+}
+.prdTxt button {
+  background-color: #f28123;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+}
+.prdTxt button:hover {
+  background-color: #f28023d3;
+}
+.prdTxt button svg {
+  font-weight: 500;
+}
+.related h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.related p {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px 0px;
+}
