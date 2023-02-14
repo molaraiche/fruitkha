@@ -9,7 +9,7 @@ const About = () => {
       <section className="about">
         <section className="aboutTitle">
           <p>WE SALE FRESH FRUITS</p>
-          <h2> About Us </h2>
+          <h2> About </h2>
         </section>
         <section className="aContent">
           <section className="details">

@@ -134,3 +134,17 @@
     width: 90%;
   }
 }
+
+@media (max-width: 397px) {
+  .chead h1 {
+    font-size: 34px;
+  }
+}
+
+.copyright {
+  font-family: "Poppins", sans-serif;
+}
+.copyright a {
+  color: #f28123;
+  font-weight: 800;
+}

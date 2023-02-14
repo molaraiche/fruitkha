@@ -7,7 +7,7 @@ const News = ({ datas }) => {
       <section className="news">
         <div className="newsHead">
           <p>ORGANIC INFORMATION</p>
-          <h1>News Article</h1>
+          <h1>News</h1>
         </div>
         <div className="newsArticles">
           {datas.map((data) => (

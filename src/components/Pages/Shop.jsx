@@ -2,7 +2,6 @@ import "../../styles/shop.css";
 import ProductCard from "../Shop/ProductCard";
 import { CgMenuRound } from "react-icons/cg";
 const Shop = ({ products }) => {
-  console.log(products);
   return (
     <div>
       <div className="sHead">

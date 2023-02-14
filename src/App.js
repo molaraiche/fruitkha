@@ -5,7 +5,6 @@ import "./styles/app.css";
 const App = () => {
   const [datas, setData] = useState([]);
   const [products, setProducrs] = useState([]);
-  console.log(datas);
   const getData = async () => {
     const res = await fetch("./db/db.json");
     const data = await res.json();
@@ -20,7 +19,6 @@ const App = () => {
     getData();
     getProducts();
   }, []);
-  console.log(datas);
   return (
     <div className="box">
       <div className="hContainer">

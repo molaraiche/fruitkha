@@ -39,6 +39,15 @@ const Contact = () => {
             </div>
             <p>Phone: +00 111 222 3333 Email: support@fruitkha.com</p>
           </div>
+          <div className="copyright">
+            all right for{" "}
+            <a
+              href="https://molaraiche.vercel.app/"
+              target="_blank"
+              rel="noreferrer">
+              MOA
+            </a>
+          </div>
         </div>
         <div className="form">
           <div className="formtxt">
