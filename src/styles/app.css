@@ -1,17 +1,1 @@
-#root {
-  background: url("../../public/Images/hero-bg.jpg") fixed center center/cover;
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100vh;
-}
-.box {
-  position: absolute;
-  background-color: #051922bf;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+#root{background:url(../../public/Images/hero-bg.jpg) fixed center center/cover;position:relative;top:0;right:0;bottom:0;left:0;height:100vh}.box{position:absolute;background-color:#051922bf;top:0;right:0;bottom:0;left:0}
