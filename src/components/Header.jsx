@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
+import { FaShoppingCart } from "react-icons/fa";
 import { CgMenuGridR, CgClose } from "react-icons/cg";
-const Header = () => {
+const Header = ({ added }) => {
   const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
   const menuHandler = () => {
@@ -49,7 +50,12 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-
+      <div className="icons">
+        <span>
+          <span className="qtNbr"> {added} </span>
+          <FaShoppingCart />
+        </span>
+      </div>
       <div className="burger">
         {square === true ? (
           <CgMenuGridR onClick={menuHandler} />

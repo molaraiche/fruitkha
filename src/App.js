@@ -5,6 +5,7 @@ import "./styles/app.css";
 const App = () => {
   const [datas, setData] = useState([]);
   const [products, setProducrs] = useState([]);
+  const [added, setAdded] = useState("");
   const getData = async () => {
     const res = await fetch("./db/db.json");
     const data = await res.json();
@@ -23,11 +24,16 @@ const App = () => {
     <div className="box">
       <div className="hContainer">
         <header className="container">
-          <Header />
+          <Header added={added} />
         </header>
       </div>
       <section>
-        <RouteLink datas={datas} products={products} />
+        <RouteLink
+          datas={datas}
+          products={products}
+          added={added}
+          setAdded={setAdded}
+        />
       </section>
     </div>
   );
