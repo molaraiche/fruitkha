@@ -105,3 +105,24 @@
   color: #f28123;
   font-size: 24px;
 }
+@media (max-width: 435px) {
+  .prdTxt {
+    margin: 10px;
+  }
+  .prdTxt input {
+    width: 40px;
+    height: 20px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 300px) {
+  .prdTxt {
+    margin: 10px;
+  }
+  .prdTxt input {
+    width: 20px;
+    height: 10px;
+    margin: 5px;
+  }
+}

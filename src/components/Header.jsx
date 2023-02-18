@@ -6,17 +6,21 @@ import { CgMenuGridR, CgClose } from "react-icons/cg";
 const Header = ({ added }) => {
   const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
+  const [cardIcon, setCardIcon] = useState("hideIcons");
   const menuHandler = () => {
     setMenu(Menu === "hide" ? "show" : "hide");
     setSquare(false);
+    setCardIcon(cardIcon === "hideIcons" ? "showIcons" : "hideIcons");
   };
   const squareHandler = () => {
     setSquare(true);
     setMenu("hide");
+    setCardIcon("hideIcons");
   };
   const closeMenu = () => {
     setMenu("hide");
     setSquare(true);
+    setCardIcon("hideIcons");
   };
   return (
     <div className="header">
@@ -50,7 +54,7 @@ const Header = ({ added }) => {
           </Link>
         </li>
       </ul>
-      <div className="icons">
+      <div className="icons" id={cardIcon}>
         <span>
           <span className="qtNbr"> {added} </span>
           <FaShoppingCart />

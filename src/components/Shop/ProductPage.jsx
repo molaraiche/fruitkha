@@ -1,31 +1,20 @@
 import { useState } from "react";
 import "../../styles/prdPage.css";
 import { MdAddShoppingCart } from "react-icons/md";
-import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const off = {
-  display: "none",
-};
-const on = {
-  display: "block",
-};
 const ProductPage = ({ name, img, details, setAdded }) => {
   const [prdQt, setPrdQt] = useState(0);
-  const [cardstats, setCardStats] = useState(off);
   const addQt = () => setPrdQt(prdQt + 1);
   const rmvQt = () => (prdQt > 0 ? setPrdQt(prdQt - 1) : null);
-  console.log(cardstats);
 
   const addToCardHandler = () => {
-    console.log(cardstats);
     if (prdQt > 0) {
       setAdded(prdQt);
     } else {
-      setAdded("");
+      setAdded(0);
     }
   };
-  console.log(cardstats);
 
   return (
     <div>
