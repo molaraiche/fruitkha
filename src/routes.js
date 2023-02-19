@@ -7,7 +7,7 @@ import Contact from "./components/Pages/Contact";
 import Shop from "./components/Pages/Shop";
 import ProductPage from "./components/Shop/ProductPage";
 import Article from "./components/Article";
-
+import ShoppingCard from "./components/Shop/ShoppingCard";
 const RouteLink = ({ datas, products, setAdded }) => {
   return (
     <Routes>
@@ -16,6 +16,7 @@ const RouteLink = ({ datas, products, setAdded }) => {
       <Route path="/news/*" element={<News datas={datas} />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/shop/*" element={<Shop products={products} />} />
+      <Route path="/cart" element={<ShoppingCard />} />
       {datas.map((data) => (
         <Route
           key={data.id}

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/header.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { CgMenuGridR, CgClose } from "react-icons/cg";
+import ShoppingCard from "./Shop/ShoppingCard";
 const Header = ({ added }) => {
   const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
@@ -56,8 +57,10 @@ const Header = ({ added }) => {
       </ul>
       <div className="icons" id={cardIcon}>
         <span>
-          <span className="qtNbr"> {added} </span>
-          <FaShoppingCart />
+          <Link to="/cart">
+            <span className="qtNbr"> {added} </span>
+            <FaShoppingCart />
+          </Link>
         </span>
       </div>
       <div className="burger">
