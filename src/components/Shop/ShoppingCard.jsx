@@ -1,5 +1,5 @@
 import "../../styles/cart.css";
-
+import Tables from "./Table";
 const ShoppingCard = () => {
   return (
     <div className="cardContent">
@@ -7,32 +7,15 @@ const ShoppingCard = () => {
         <h1>Cart</h1>
       </div>
       <div className="cartHolder">
-        <table border={2}>
-          <thead>
-            <tr>
-              <td>Name</td>
-              <td>Name</td>
-              <td>Name</td>
-              <td>Name</td>
-              <td>Name</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>details</td>
-              <td>details</td>
-              <td>details</td>
-              <td>details</td>
-              <td>details</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td className="total">Price</td>
-              <td className="ttprice">Price</td>
-            </tr>
-          </tfoot>
-        </table>
+        <Tables />
+        <main className="total">
+          <p>
+            Total: <span className="price">10$</span>
+          </p>
+          <div className="btnHolder">
+            <button>Checkout</button>
+          </div>
+        </main>
       </div>
     </div>
   );

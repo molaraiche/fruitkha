@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .cart {
   width: 80%;
@@ -32,4 +33,43 @@ table tfoot .total {
 }
 table tfoot .ttprice {
   width: 20%;
+}
+.total {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.total p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 30px;
+}
+.total .price {
+  color: #388e3c;
+  font-size: 24px;
+  margin: 0 20px;
+}
+.total .btnHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.total button {
+  background-color: #f28123;
+  padding: 15px 80px;
+  border: none;
+  font-weight: 550;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.total button:hover {
+  opacity: 0.4;
 }
