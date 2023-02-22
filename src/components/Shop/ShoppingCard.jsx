@@ -1,6 +1,6 @@
 import "../../styles/cart.css";
 import Tables from "./Table";
-const ShoppingCard = () => {
+const ShoppingCard = ( ) => {
   return (
     <div className="cardContent">
       <div className="cartHead">

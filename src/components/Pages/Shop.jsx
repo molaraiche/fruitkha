@@ -1,7 +1,7 @@
 import "../../styles/shop.css";
 import ProductCard from "../Shop/ProductCard";
 import { CgMenuRound } from "react-icons/cg";
-const Shop = ({ products }) => {
+const Shop = ({ products, getDetails }) => {
   return (
     <div>
       <div className="sHead">
@@ -20,6 +20,7 @@ const Shop = ({ products }) => {
             name={prd.name}
             price={prd.price}
             path={prd.path}
+            getDetails={getDetails}
           />
         ))}
       </div>

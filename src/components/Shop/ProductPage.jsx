@@ -3,7 +3,7 @@ import "../../styles/prdPage.css";
 import { MdAddShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const ProductPage = ({ name, img, details, setAdded }) => {
+const ProductPage = ({ id, name, img, details, setAdded, getDetails }) => {
   const [prdQt, setPrdQt] = useState(0);
   const addQt = () => setPrdQt(prdQt + 1);
   const rmvQt = () => (prdQt > 0 ? setPrdQt(prdQt - 1) : null);
@@ -11,6 +11,7 @@ const ProductPage = ({ name, img, details, setAdded }) => {
   const addToCardHandler = () => {
     if (prdQt > 0) {
       setAdded(prdQt);
+      getDetails(id);
     } else {
       setAdded(0);
     }

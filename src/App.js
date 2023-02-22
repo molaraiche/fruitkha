@@ -16,10 +16,14 @@ const App = () => {
     const data = await res.json();
     setProducrs(data);
   };
+  const getDetails = (id) => {
+    console.log(id);
+  };
   useEffect(() => {
     getData();
     getProducts();
   }, []);
+
   return (
     <div className="box">
       <div className="hContainer">
@@ -33,6 +37,7 @@ const App = () => {
           products={products}
           added={added}
           setAdded={setAdded}
+          getDetails={getDetails}
         />
       </section>
     </div>
