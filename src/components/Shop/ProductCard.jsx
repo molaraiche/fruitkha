@@ -7,7 +7,7 @@ const ProductCard = ({ id, img, price, name, path, getDetails }) => {
       <img src={img} alt="product img" />
       <h4> {name}</h4>
       <p>per kg</p>
-      <h4> {price} </h4>
+      <h4> $ {price} </h4>
       <button>
         <MdAddShoppingCart /> Add to Cart
       </button>

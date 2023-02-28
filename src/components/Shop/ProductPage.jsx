@@ -1,17 +1,24 @@
-import { useState } from "react";
 import "../../styles/prdPage.css";
 import { MdAddShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const ProductPage = ({ id, name, img, details, setAdded, getDetails }) => {
-  const [prdQt, setPrdQt] = useState(0);
-  const addQt = () => setPrdQt(prdQt + 1);
-  const rmvQt = () => (prdQt > 0 ? setPrdQt(prdQt - 1) : null);
-
+const ProductPage = ({
+  id,
+  name,
+  img,
+  details,
+  price,
+  setAdded,
+  getDetails,
+  rmvQt,
+  addQt,
+  prdQt,
+  setPrdQt,
+}) => {
   const addToCardHandler = () => {
     if (prdQt > 0) {
       setAdded(prdQt);
-      getDetails(id);
+      getDetails(id, name, prdQt, price);
     } else {
       setAdded(0);
     }
@@ -30,9 +37,13 @@ const ProductPage = ({ id, name, img, details, setAdded, getDetails }) => {
         <div className="imageHolder">
           <img src={img} alt={name} />
         </div>
+
         <div className="prdTxt">
           <h1> {name} </h1>
           <p> {details} </p>
+          <div className="price">
+            <span> $ {price} </span>
+          </div>
           <div className="qt">
             <button onClick={rmvQt} className="plusMinus">
               -

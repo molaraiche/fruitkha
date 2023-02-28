@@ -6,6 +6,7 @@ const App = () => {
   const [datas, setData] = useState([]);
   const [products, setProducrs] = useState([]);
   const [added, setAdded] = useState(0);
+  const [prdQt, setPrdQt] = useState(0);
   const getData = async () => {
     const res = await fetch("./db/db.json");
     const data = await res.json();
@@ -16,9 +17,15 @@ const App = () => {
     const data = await res.json();
     setProducrs(data);
   };
-  const getDetails = (id) => {
+  const addQt = () => setPrdQt(prdQt + 1);
+  const rmvQt = () => (prdQt > 0 ? setPrdQt(prdQt - 1) : null);
+  const getDetails = (id, name, prdQt, price) => {
     console.log(id);
+    console.log(name);
+    console.log(prdQt);
+    console.log(price);
   };
+
   useEffect(() => {
     getData();
     getProducts();
@@ -38,6 +45,10 @@ const App = () => {
           added={added}
           setAdded={setAdded}
           getDetails={getDetails}
+          prdQt={prdQt}
+          addQt={addQt}
+          rmvQt={rmvQt}
+          setPrdQt={setPrdQt}
         />
       </section>
     </div>

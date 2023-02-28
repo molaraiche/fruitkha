@@ -8,7 +8,16 @@ import Shop from "./components/Pages/Shop";
 import ProductPage from "./components/Shop/ProductPage";
 import Article from "./components/Article";
 import ShoppingCard from "./components/Shop/ShoppingCard";
-const RouteLink = ({ datas, products, setAdded, getDetails }) => {
+const RouteLink = ({
+  datas,
+  products,
+  setAdded,
+  getDetails,
+  rmvQt,
+  addQt,
+  prdQt,
+  setPrdQt
+}) => {
   return (
     <Routes>
       <Route path="*" exact element={<Home />} />
@@ -48,8 +57,13 @@ const RouteLink = ({ datas, products, setAdded, getDetails }) => {
               img={prd.image}
               details={prd.details}
               products={products}
+              price={prd.price}
               setAdded={setAdded}
               getDetails={getDetails}
+              prdQt={prdQt}
+              addQt={addQt}
+              rmvQt={rmvQt}
+              setPrdQt={setPrdQt}
             />
           }
         />

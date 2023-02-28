@@ -126,3 +126,15 @@
     margin: 5px;
   }
 }
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.price span {
+  color: green;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}

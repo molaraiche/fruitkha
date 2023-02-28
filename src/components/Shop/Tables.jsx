@@ -21,7 +21,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }));
 
-const Tables = ({ id, name, quantity, price }) => {
+const Tables = ({ id, name, prdQt, price }) => {
   return (
     <TableContainer
       style={{
@@ -51,7 +51,7 @@ const Tables = ({ id, name, quantity, price }) => {
           <TableRow>
             <StyledTableCell align="center"> {id} </StyledTableCell>
             <StyledTableCell align="center"> {name} </StyledTableCell>
-            <StyledTableCell align="center"> {quantity} </StyledTableCell>
+            <StyledTableCell align="center"> {prdQt} </StyledTableCell>
             <StyledTableCell align="center"> {price} </StyledTableCell>
             <StyledTableCell align="center">
               <button className="delBtn">Delete</button>

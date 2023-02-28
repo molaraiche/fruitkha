@@ -3,7 +3,7 @@
     "id": 1,
     "image": "../Images/products/product-img-1.jpg",
     "name": "Strawberry",
-    "price": "85$",
+    "price": "85",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
     "path": "/Strawberry_1"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "image": "../Images/products/product-img-2.jpg",
     "name": "Berry",
-    "price": "70$",
+    "price": "70",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
     "path": "/Berry"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "image": "../Images/products/product-img-3.jpg",
     "name": "Lemon",
-    "price": "85$",
+    "price": "85",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
     "path": "/Lemon"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "image": "../Images/products/product-img-4.jpg",
     "name": "Avocado",
-    "price": "85$",
+    "price": "85",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
     "path": "/Avocado"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "image": "../Images/products/product-img-5.jpg",
     "name": "Green Apple",
-    "price": "45$",
+    "price": "45",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
     "path": "/Green_Apple"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "image": "../Images/products/product-img-6.jpg",
     "name": "Strawberry",
-    "price": "80$",
+    "price": "80",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
     "path": "/Strawberry_2"
   }
