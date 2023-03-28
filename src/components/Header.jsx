@@ -8,6 +8,7 @@ const Header = ({ added }) => {
   const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
   const [cardIcon, setCardIcon] = useState("hideIcons");
+  const [shoppingCard, setShoppingCard] = useState("hideCart");
   const menuHandler = () => {
     setMenu(Menu === "hide" ? "show" : "hide");
     setSquare(false);
@@ -22,6 +23,9 @@ const Header = ({ added }) => {
     setMenu("hide");
     setSquare(true);
     setCardIcon("hideIcons");
+  };
+  const cartHandler = (e) => {
+    setShoppingCard("showCard");
   };
   return (
     <div className="header">
@@ -56,11 +60,9 @@ const Header = ({ added }) => {
         </li>
       </ul>
       <div className="icons" id={cardIcon}>
-        <span>
-          <Link to="/cart">
-            <span className="qtNbr"> {added} </span>
-            <FaShoppingCart />
-          </Link>
+        <span onClick={cartHandler}>
+          <span className="qtNbr"> {added} </span>
+          <FaShoppingCart />
         </span>
       </div>
       <div className="burger">
@@ -70,6 +72,7 @@ const Header = ({ added }) => {
           <CgClose onClick={squareHandler} />
         )}
       </div>
+      <ShoppingCard shoppingCard={shoppingCard} setShoppingCard={setShoppingCard} />
     </div>
   );
 };

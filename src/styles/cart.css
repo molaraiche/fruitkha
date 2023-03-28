@@ -1,19 +1,57 @@
-.cartHead {
+.cardContent {
+  width: 40%;
+  height: 90%;
+  position: absolute;
+  background-color: white;
+  top: 12vh;
+  right: 0;
+  z-index: 90;
+}
+@media (max-width: 1242px) {
+  .cardContent {
+    width: 70%;
+  }
+}
+@media (max-width: 847px) {
+  .cardContent {
+    width: 100%;
+  }
+  .total .btnHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  .total button {
+    padding: 15px 30px;
+  }
+  .total {
+    flex-direction: column;
+  }
+}
+#hideCart {
+  display: none;
+}
+#showCard {
+  display: block;
+}
+/* .cartHead {
   height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.cartHead h1 {
+} */
+/* .cartHead h1 {
   font-family: "Poppins", sans-serif;
   font-size: 64px;
   color: #fff;
-}
+} */
 .cartHolder {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 .cart {
   width: 80%;
@@ -72,4 +110,21 @@ table tfoot .ttprice {
 }
 .total button:hover {
   opacity: 0.4;
+}
+.closeEvent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.closeEvent button {
+  padding: 10px 40px;
+  margin: 20px;
+  background-color: #f28123;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+.closeEvent button:hover {
+  opacity: 0.9;
 }

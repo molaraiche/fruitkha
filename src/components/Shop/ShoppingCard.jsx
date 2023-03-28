@@ -1,11 +1,22 @@
 import "../../styles/cart.css";
 import Tables from "./Tables";
-const ShoppingCard = ({ getDetails, id, name, price, prdQt }) => {
+const ShoppingCard = ({
+  getDetails,
+  id,
+  name,
+  price,
+  prdQt,
+  shoppingCard,
+  setShoppingCard,
+}) => {
   console.table(getDetails, id, name, price, prdQt);
+  const closeHandler = (e) => {
+    setShoppingCard("hideCart");
+  };
   return (
-    <div className="cardContent">
-      <div className="cartHead">
-        <h1>Cart</h1>
+    <div id={shoppingCard} className="cardContent">
+      <div className="closeEvent">
+        <button onClick={closeHandler}>X</button>
       </div>
       <div className="cartHolder">
         <Tables

@@ -16,12 +16,13 @@ const ProductPage = ({
   setPrdQt,
 }) => {
   const addToCardHandler = () => {
-    if (prdQt > 0) {
-      setAdded(prdQt);
-      getDetails(id, name, prdQt, price);
-    } else {
-      setAdded(0);
-    }
+    console.log(prdQt);
+    // if (prdQt > 0) {
+    //   setAdded(prdQt);
+    //   getDetails(id, name, prdQt, price);
+    // } else {
+    //   setAdded(0);
+    // }
   };
 
   return (

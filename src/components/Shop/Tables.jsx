@@ -22,6 +22,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 }));
 
 const Tables = ({ id, name, prdQt, price }) => {
+  console.log(prdQt);
   return (
     <TableContainer
       style={{
