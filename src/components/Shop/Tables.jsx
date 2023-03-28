@@ -21,8 +21,12 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }));
 
-const Tables = ({ id, name, prdQt, price }) => {
-  console.log(prdQt);
+const Tables = ({ cartId, cartName, cartQt, cartPrice, added, setAdded }) => {
+  const deleteHandler = (e) => {
+    e.preventDefault();
+    e.target.parentElement.parentElement.remove();
+    setAdded(0);
+  };
   return (
     <TableContainer
       style={{
@@ -50,12 +54,14 @@ const Tables = ({ id, name, prdQt, price }) => {
         </TableHead>
         <TableBody>
           <TableRow>
-            <StyledTableCell align="center"> {id} </StyledTableCell>
-            <StyledTableCell align="center"> {name} </StyledTableCell>
-            <StyledTableCell align="center"> {prdQt} </StyledTableCell>
-            <StyledTableCell align="center"> {price} </StyledTableCell>
+            <StyledTableCell align="center"> {cartId} </StyledTableCell>
+            <StyledTableCell align="center"> {cartName} </StyledTableCell>
+            <StyledTableCell align="center"> {cartQt} </StyledTableCell>
+            <StyledTableCell align="center"> {cartPrice} </StyledTableCell>
             <StyledTableCell align="center">
-              <button className="delBtn">Delete</button>
+              <button onClick={deleteHandler} className="delBtn">
+                Delete
+              </button>
             </StyledTableCell>
           </TableRow>
         </TableBody>

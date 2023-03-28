@@ -79,6 +79,14 @@ const Contact = () => {
             <div className="submitHolder form-grp">
               <input type="submit" />
             </div>
+            <p
+              style={{
+                color: "#222",
+                textAlign: "center",
+                fontFamily: "arial",
+              }}>
+              This form has no backend support
+            </p>
           </form>
         </div>
       </section>

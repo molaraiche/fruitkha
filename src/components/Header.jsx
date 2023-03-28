@@ -4,7 +4,19 @@ import "../styles/header.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { CgMenuGridR, CgClose } from "react-icons/cg";
 import ShoppingCard from "./Shop/ShoppingCard";
-const Header = ({ added }) => {
+const Header = ({
+  added,
+  setAdded,
+  cartData,
+  cartId,
+  setCartId,
+  cartName,
+  setCartName,
+  cartQt,
+  setCartQt,
+  cartPrice,
+  setCartPrice,
+}) => {
   const [square, setSquare] = useState(true);
   const [Menu, setMenu] = useState("hide");
   const [cardIcon, setCardIcon] = useState("hideIcons");
@@ -29,12 +41,12 @@ const Header = ({ added }) => {
   };
   return (
     <div className="header">
-      <Link to="*" onClick={closeMenu}>
+      <Link to="/" onClick={closeMenu}>
         <img src="./Images/logo.png" alt="logo" />
       </Link>
       <ul id={Menu}>
         <li>
-          <Link to="*" onClick={closeMenu}>
+          <Link to="/" onClick={closeMenu}>
             Home
           </Link>
         </li>
@@ -72,7 +84,21 @@ const Header = ({ added }) => {
           <CgClose onClick={squareHandler} />
         )}
       </div>
-      <ShoppingCard shoppingCard={shoppingCard} setShoppingCard={setShoppingCard} />
+      <ShoppingCard
+        cartData={cartData}
+        shoppingCard={shoppingCard}
+        setShoppingCard={setShoppingCard}
+        added={added}
+        setAdded={setAdded}
+        cartId={cartId}
+        setCartId={setCartId}
+        cartName={cartName}
+        setCartName={setCartName}
+        cartQt={cartQt}
+        setCartQt={setCartQt}
+        cartPrice={cartPrice}
+        setCartPrice={setCartPrice}
+      />
     </div>
   );
 };

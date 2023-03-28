@@ -7,6 +7,11 @@ const App = () => {
   const [products, setProducrs] = useState([]);
   const [added, setAdded] = useState(0);
   const [prdQt, setPrdQt] = useState(0);
+  const [cartId, setCartId] = useState(0);
+  const [cartName, setCartName] = useState("");
+  const [cartQt, setCartQt] = useState(0);
+  const [cartPrice, setCartPrice] = useState(0);
+
   const getData = async () => {
     const res = await fetch("./db/db.json");
     const data = await res.json();
@@ -19,12 +24,6 @@ const App = () => {
   };
   const addQt = () => setPrdQt(prdQt + 1);
   const rmvQt = () => (prdQt > 0 ? setPrdQt(prdQt - 1) : null);
-  const getDetails = (id, name, prdQt, price) => {
-    console.log(id);
-    console.log(name);
-    console.log(prdQt);
-    console.log(price);
-  };
 
   useEffect(() => {
     getData();
@@ -35,7 +34,18 @@ const App = () => {
     <div className="box">
       <div className="hContainer">
         <header className="container">
-          <Header added={added} />
+          <Header
+            added={added}
+            setAdded={setAdded}
+            cartId={cartId}
+            setCartId={setCartId}
+            cartName={cartName}
+            setCartName={setCartName}
+            cartQt={cartQt}
+            setCartQt={setCartQt}
+            cartPrice={cartPrice}
+            setCartPrice={setCartPrice}
+          />
         </header>
       </div>
       <section>
@@ -44,11 +54,18 @@ const App = () => {
           products={products}
           added={added}
           setAdded={setAdded}
-          getDetails={getDetails}
           prdQt={prdQt}
           addQt={addQt}
           rmvQt={rmvQt}
           setPrdQt={setPrdQt}
+          cartId={cartId}
+          setCartId={setCartId}
+          cartName={cartName}
+          setCartName={setCartName}
+          cartQt={cartQt}
+          setCartQt={setCartQt}
+          cartPrice={cartPrice}
+          setCartPrice={setCartPrice}
         />
       </section>
     </div>

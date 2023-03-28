@@ -1,15 +1,23 @@
 import "../../styles/cart.css";
 import Tables from "./Tables";
 const ShoppingCard = ({
-  getDetails,
+  added,
+  setAdded,
   id,
   name,
   price,
   prdQt,
   shoppingCard,
   setShoppingCard,
+  cartId,
+  setCartId,
+  cartName,
+  setCartName,
+  cartQt,
+  setCartQt,
+  cartPrice,
+  setCartPrice,
 }) => {
-  console.table(getDetails, id, name, price, prdQt);
   const closeHandler = (e) => {
     setShoppingCard("hideCart");
   };
@@ -20,15 +28,24 @@ const ShoppingCard = ({
       </div>
       <div className="cartHolder">
         <Tables
-          getDetails={getDetails}
           id={id}
           name={name}
           price={price}
           prdQt={prdQt}
+          cartId={cartId}
+          setCartId={setCartId}
+          cartName={cartName}
+          setCartName={setCartName}
+          cartQt={cartQt}
+          setCartQt={setCartQt}
+          cartPrice={cartPrice}
+          setCartPrice={setCartPrice}
+          added={added}
+          setAdded={setAdded}
         />
         <main className="total">
           <p>
-            Total: <span className="price">10$</span>
+            Total: <span className="price"> {cartQt * cartPrice}$ </span>
           </p>
           <div className="btnHolder">
             <button>Checkout</button>

@@ -16,11 +16,19 @@ const RouteLink = ({
   rmvQt,
   addQt,
   prdQt,
-  setPrdQt
+  setPrdQt,
+  cartId,
+  setCartId,
+  cartName,
+  setCartName,
+  cartQt,
+  setCartQt,
+  cartPrice,
+  setCartPrice,
 }) => {
   return (
     <Routes>
-      <Route path="*" exact element={<Home />} />
+      <Route path="/" exact element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/news/*" element={<News datas={datas} />} />
       <Route path="/contact" element={<Contact />} />
@@ -64,6 +72,10 @@ const RouteLink = ({
               addQt={addQt}
               rmvQt={rmvQt}
               setPrdQt={setPrdQt}
+              setCartId={setCartId}
+              setCartName={setCartName}
+              setCartQt={setCartQt}
+              setCartPrice={setCartPrice}
             />
           }
         />

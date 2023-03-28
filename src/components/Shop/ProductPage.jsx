@@ -3,26 +3,31 @@ import { MdAddShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const ProductPage = ({
-  id,
   name,
   img,
   details,
   price,
   setAdded,
-  getDetails,
   rmvQt,
   addQt,
   prdQt,
   setPrdQt,
+  setCartId,
+  setCartName,
+  setCartQt,
+  setCartPrice,
 }) => {
   const addToCardHandler = () => {
-    console.log(prdQt);
-    // if (prdQt > 0) {
-    //   setAdded(prdQt);
-    //   getDetails(id, name, prdQt, price);
-    // } else {
-    //   setAdded(0);
-    // }
+    setCartId(prdQt);
+    setCartName(name);
+    setCartQt(prdQt);
+    setCartPrice(price);
+
+    if (prdQt > 0) {
+      setAdded(prdQt);
+    } else {
+      setAdded(0);
+    }
   };
 
   return (

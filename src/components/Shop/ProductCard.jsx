@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { MdAddShoppingCart } from "react-icons/md";
 import "../../styles/shop.css";
-const ProductCard = ({ id, img, price, name, path, getDetails }) => {
+const ProductCard = ({ img, price, name, path }) => {
   return (
     <Link to={path} className="prdCard">
       <img src={img} alt="product img" />
