@@ -61,13 +61,13 @@ const Header = ({
           </Link>
         </li>
         <li>
-          <Link to="/contact" onClick={closeMenu}>
-            Contact
+          <Link to="shop" onClick={closeMenu}>
+            Shop
           </Link>
         </li>
         <li>
-          <Link to="shop" onClick={closeMenu}>
-            Shop
+          <Link to="/contact" onClick={closeMenu}>
+            Contact
           </Link>
         </li>
       </ul>

@@ -42,6 +42,7 @@ const ShoppingCard = ({
           setCartPrice={setCartPrice}
           added={added}
           setAdded={setAdded}
+          
         />
         <main className="total">
           <p>

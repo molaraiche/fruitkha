@@ -18,15 +18,14 @@ const ProductPage = ({
   setCartPrice,
 }) => {
   const addToCardHandler = () => {
-    setCartId(prdQt);
-    setCartName(name);
-    setCartQt(prdQt);
-    setCartPrice(price);
-
     if (prdQt > 0) {
       setAdded(prdQt);
+      setCartId(prdQt);
+      setCartName(name);
+      setCartQt(prdQt);
+      setCartPrice(price);
     } else {
-      setAdded(0);
+      alert("Please add an quantity of product first");
     }
   };
 
