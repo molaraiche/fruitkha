@@ -23,5 +23,5 @@ https://fruitkha.mohamedlaraiche.com/
 
 ## Author
 
-                            [MOA](https://www.mohamedlaraiche.com)
+[MOA](https://www.mohamedlaraiche.com)
 
