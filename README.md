@@ -18,10 +18,10 @@ To deploy this project run
 
 ## Demo
 
-https://fruitkha.mohamedlaraiche.com/
+https://fruitkha.molaraiche.com/
 
 
 ## Author
 
-[MOA](https://www.mohamedlaraiche.com)
+[molaraiche](https://www.molaraiche.com)
 
